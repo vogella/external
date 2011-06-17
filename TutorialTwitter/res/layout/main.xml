@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	android:id="@+id/RelativeLayout01"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#ccc">
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:id="@+id/EditTextSearch"
+		android:layout_toLeftOf="@+id/ButtonSearch"
+		android:layout_margin="5dip" android:text="greenrobot_de"></EditText>
+	<ListView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_toLeftOf="@+id/EditTextSearch"
+		android:id="@android:id/list"
+		android:background="#fff"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:layout_below="@+id/EditTextSearch" android:cacheColorHint="#fff"></ListView>
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_alignParentRight="true"
+		android:id="@+id/ButtonSearch"
+		android:text="Suche"
+		android:layout_margin="5dip"
+		android:onClick="search"></Button>
+
+</RelativeLayout>

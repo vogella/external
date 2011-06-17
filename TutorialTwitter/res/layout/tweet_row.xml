@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:padding="3dip">
+	<ImageView
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_margin="5dip"
+		android:src="@drawable/icon"
+		android:id="@+id/ImageViewUserIcon" android:scaleType="centerInside" android:layout_height="48dp" android:layout_width="48dp"></ImageView>
+	<TextView
+		android:layout_toRightOf="@+id/ImageViewUserIcon"
+		android:layout_height="wrap_content"
+		android:text="User"
+		android:layout_width="wrap_content"
+		android:id="@+id/TextViewUserName"
+		android:layout_alignTop="@+id/ImageViewUserIcon"
+		android:textColor="#666"
+		android:textStyle="bold"></TextView>
+	<TextView
+		android:layout_below="@+id/TextViewUserName"
+		android:layout_height="wrap_content"
+		android:text="Tweet text"
+		android:layout_width="wrap_content"
+		android:id="@+id/TextViewTweetText"
+		android:layout_alignLeft="@+id/TextViewUserName"
+		android:textColor="#666"></TextView>
+</RelativeLayout>
